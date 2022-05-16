@@ -30,6 +30,23 @@ body {
     border: solid 2px red;
 }
 
+.header-container {
+    max-width: 1280px;     
+    width: 100%;
+    min-height: 90px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    border: solid 2px red;
+}
+.title {
+    max-width: 1280px;
+    font-size: 48px;
+    text-align: center; 
+    color: #4C4C4C;
+    /* border: solid 2px red; */
+}
 
 .main {
     max-width: 1280px;     
