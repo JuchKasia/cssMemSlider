@@ -30,6 +30,8 @@ body {
     border: solid 2px red;
 }
 
+/*HEADER*/
+
 .header-container {
     max-width: 1280px;     
     width: 100%;
@@ -48,6 +50,8 @@ body {
     /* border: solid 2px red; */
 }
 
+/*MAIN*/
+
 .main {
     max-width: 1280px;     
     width: 100%;
@@ -55,6 +59,7 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 /* 
 .container {
     max-width: 1200px;     
@@ -63,12 +68,18 @@ body {
     /* border: solid 2px red; */
 /*} 
 */
-
+.slider {
+    display: flex;
+    max-width: 1200px;   
+    margin: 0 auto;
+    justify-content: center;
+    border: solid 2px red;
+    
+}
 .slider-wrapper {
     display: flex;
     justify-content: center;
-
-    max-width: 1200px;     
+    max-width: 1000px;     
     width: 100%;
     margin: 0 auto;
     border: solid 2px red;
