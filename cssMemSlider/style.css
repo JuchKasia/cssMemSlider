@@ -144,6 +144,28 @@ body {
     transform: translateX(-60%);
 }
 
+.slider-control {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.control-btn {
+    display: flex;
+    cursor: pointer;
+}
+
+.btn {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: 2px solid rgb(93, 93, 167);
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.control-btn:hover .btn {
+    
+}
 /* 
 .slider-item {
     position: absolute; 
