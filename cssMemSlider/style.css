@@ -22,19 +22,22 @@ body {
     padding: 0px;
     justify-content: space-between;
     align-items: center;
-    color: #4C4C4C;
 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-weight: 700;
+    font-style: normal;
+    background-color: rgb(236, 235, 233);
+    color: #4C4C4C;
     border: solid 2px red;
 }
 
 /*HEADER*/
 
 .header-container {
-    max-width: 1280px;     
-    width: 100%;
+    position: relative;
+    /* max-width: 1280px;      */
+    width: 90%;
+    /* max-width: 60vh; */
     min-height: 90px;
     margin: 0 auto;
     justify-content: center;
@@ -45,6 +48,7 @@ body {
 .title {
     max-width: 1280px;
     font-size: 48px;
+    font-weight: 700;
     text-align: center; 
     color: #4C4C4C;
     /* border: solid 2px red; */
@@ -52,14 +56,22 @@ body {
 
 /*MAIN*/
 
-.main {
-    max-width: 1280px;     
-    width: 100%;
+.main-container {
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    /* max-width: 1280px;      */
+    width: 90%;
+    max-width: 60vh;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    overflow: hidden; /*???*/
 }
 
+input {
+    display: none;
+}
 /* 
 .container {
     max-width: 1200px;     
