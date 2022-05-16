@@ -32,7 +32,7 @@ body {
     font-style: normal;
     background-color: rgb(236, 235, 233);
     color: #4C4C4C;
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 
 /*HEADER*/
@@ -47,8 +47,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center; 
-    border: solid 2px red;
 }
+
 .title {
     max-width: 1280px;
     font-size: 48px;
@@ -76,7 +76,6 @@ body {
     row-gap: 30px;
     border-radius: 10px;
     overflow: hidden; /*???*/
-    border: solid 2px red;
 }
 
 /* SLIDER-WRAPPER */
@@ -90,7 +89,6 @@ body {
     align-items: center;
     gap: 16px;
     transition: 0.5s;
-    border: solid 2px red;
     
 }
 
@@ -144,6 +142,7 @@ body {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    color: #4C4C4C;
 }
 
 .texts-overflow {
@@ -163,7 +162,7 @@ label {
 /* SLIDER-CONTROL */
 .footer-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -186,18 +185,69 @@ label {
 
 
 
-#slider1:checked ~ .footer-wrapper .text-wrapper .texts{
+#slider1:checked ~ .footer-wrapper .text-wrapper .texts .text1 {
 	margin-left: 0;
 }
 
-#slider1:checked ~ .footer-wrapper .text-wrapper .texts{
+#slider1:checked ~ .footer-wrapper .text-wrapper .texts .text2 {
 	margin-left: -15rem;
 }
 
-#slider1:checked ~ .footer-wrapper .text-wrapper .texts{
+#slider1:checked ~ .footer-wrapper .text-wrapper .texts .text3 {
 	margin-left: -30rem;
 }
 
-#slider1:checked ~ .footer-wrapper .text-wrapper .texts{
+#slider1:checked ~ .footer-wrapper .text-wrapper .texts .text4 {
 	margin-left: -45rem;
+}
+
+
+/* RADIO BUTTONS */
+.slider-control {
+    height: 50px;
+}
+
+.slider-control label {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 3px solid rgb(93, 93, 167);
+    background-color: transparent;
+
+    border-radius: 100%;
+    cursor: pointer;  
+    transition: 0.5s;
+    /* border: 3px solid rgb(93, 93, 167);
+
+    border-radius: 100%;
+    cursor: pointer;  
+    transition: 0.5s; */
+
+}
+
+.btn {
+    /* width: 40px;
+    height: 40px;
+    border: 3px solid rgb(93, 93, 167);
+    background-color: transparent;
+
+    border-radius: 100%;
+    cursor: pointer;  
+    transition: 0.5s; */
+    
+}
+
+label:hover .btn {
+    background: white;
+	border-color: #777;
+    transition: 0.3s;
+}
+#slider1:checked ~.footer-wrapper .slider-control label:nth-child(1) .btn,
+#slider2:checked ~.footer-wrapper .slider-control label:nth-child(2) .btn,
+#slider3:checked ~.footer-wrapper .slider-control label:nth-child(3) .btn,
+#slider4:checked ~.footer-wrapper .slider-control label:nth-child(4) .btn {
+    background: white;
+	border-color: #777;
+    transition: 0.3s
+
 }
